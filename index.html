@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Aplikasi Cuaca Indonesia</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="display-4">Aplikasi Cuaca Indonesia</h1>
+    
+        <!-- Input pencarian dan tombol "Cari" -->
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="cityInput" placeholder="Masukkan nama kota">
+            <button class="btn btn-primary" id="searchButton">Cari</button>
+        </div>
+    
+        <!-- Hasil cuaca -->
+        <div class="card text-center">
+            <div class="card-body">
+                <h2 id="cityName" class="card-title"></h2>
+                <p id="temperature" class="card-text"></p>
+                <p id="windSpeed" class="card-text"></p>
+                <p id="clouds" class="card-text"></p>
+                <p id="geoCoordinates" class="card-text"></p>
+                <p id="description" class="card-text"></p>
+                <img id="weatherIcon" src="" alt="‎" class="img-fluid">
+            </div>
+        </div>
+    </div>    
+    
+    <script src="dist/bundle.js"></script>
+</body>
+</html>
